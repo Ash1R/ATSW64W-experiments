@@ -52,8 +52,12 @@ release. 70/10/20 row-fraction split, per-variate normalization.
 early-stopping. Three seeds (21, 42, 67) per main config — per-cell spread
 $\leq 0.002$ MSE.
 
-**Modifications.** $d=128$ rather than $d=512$ due to compute limits, and
-a shorter 20-epoch SSL pretraining schedule.
+**Self-supervised pretraining.** Following the paper, we mask 40\% of
+*non-overlapping* patches on Weather and reconstruct them
+with an MSE loss. config: `configs/weather_selfsupervised_96.yaml`.
+
+**Modifications.** $d=128$ rather than $d=512$ and a 20-epoch SSL
+schedule (far shorter than the paper's), both due to compute limits.
 
 **Extensions (beyond the paper).** (i) Patch order shuffling probes
 whether the encoder genuinely uses inter-patch position; (ii) correlation-
