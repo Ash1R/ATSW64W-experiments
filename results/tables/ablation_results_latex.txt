@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+run_name & patch_len & stride & seq_len & num_patches & attention_pairs & mse_inv & mae_inv & avg_epoch_s \\
+\midrule
+weather_patchtst_L336_T96_P16S8_seed42 & 16 & 8 & 336 & 42.0000 & 1764.0000 & 1628.7345 & 11.8499 & 104.6745 \\
+weather_patchtst_T96_L192 & 16 & 8 & 192 & 24.0000 & 576.0000 & 1861.0326 & 12.5554 & 9.1640 \\
+weather_patchtst_T96_L336 & 16 & 8 & 336 & 42.0000 & 1764.0000 & 1605.0938 & 11.5052 & 12.9855 \\
+weather_patchtst_T96_L96 & 16 & 8 & 96 & 12.0000 & 144.0000 & 2833.2852 & 15.2853 & 7.9197 \\
+weather_patchtst_T96_P16S8 & 16 & 8 & 336 & 42.0000 & 1764.0000 & 1628.7345 & 11.8499 & 233.6545 \\
+weather_patchtst_T96_P32S16 & 32 & 16 & 336 & 21.0000 & 441.0000 & 1811.1925 & 13.2282 & 148.9794 \\
+weather_patchtst_T96_P8S4 & 8 & 4 & 336 & 84.0000 & 7056.0000 & 1613.8816 & 11.8527 & 630.4979 \\
+\bottomrule
+\end{tabular}

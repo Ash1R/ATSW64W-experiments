@@ -1,0 +1,20 @@
+# Base config for the look-back sweep on Weather T=96.
+# Sweep:
+#   python code/run_grid.py --base configs/weather_ablation_lookback_sweep.yaml \
+#       --sweep '{"seq_len": [96, 192, 336]}'
+model: patchtst
+dataset: weather
+seq_len: 336
+pred_len: 96
+patch_len: 16
+stride: 8
+d_model: 128
+n_heads: 16
+num_layers: 3
+d_ff: 256
+dropout: 0.2
+batch_size: 32
+epochs: 20
+lr: 1.0e-4
+patience: 8
+seed: 42

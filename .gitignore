@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Node / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.tsbuildinfo
+*.tsbuildinfo
+coverage/
+*.local
+
+# Data and large artifacts (kept in Drive, not GitHub)
+data/**/*.csv
+data/**/*.txt
+data/**/*.npz
+data/*.csv
+data/*.txt
+data/*.npz
+data/raw/
+data/processed/
+
+# Training outputs — checkpoints and raw per-run logs stay local; the
+# aggregate figures, tables, and metrics that back the poster + report
+# are tracked so the deliverable repo is self-contained.
+results/checkpoints/*.pt
+results/checkpoints/*.pth
+results/logs/*.log
+all_results/
+
+# Generated poster outputs
+poster/_preview.png
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Keep README.md inside results/ subdirs
+!results/**/README.md
+!data/README.md

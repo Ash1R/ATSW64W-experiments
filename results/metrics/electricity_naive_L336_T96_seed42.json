@@ -1,0 +1,32 @@
+{
+  "run_name": "electricity_naive_L336_T96_seed42",
+  "config": {
+    "model": "naive",
+    "dataset": "electricity",
+    "seq_len": 336,
+    "pred_len": 96,
+    "batch_size": 32,
+    "epochs": 1,
+    "lr": 0.0001,
+    "project_root": "/content/drive/MyDrive/cs4782_patchtst_project",
+    "output_dir": "/content/drive/MyDrive/cs4782_patchtst_project/results",
+    "seed": 42,
+    "patch_len": 16,
+    "stride": 8,
+    "run_name": "electricity_naive_L336_T96_seed42"
+  },
+  "num_channels": 321,
+  "num_params": 0,
+  "test_mse_inverse": 151484528.0,
+  "test_mae_inverse": 1188.2486572265625,
+  "test_mse_normalized": 1.6080604791641235,
+  "test_mae_normalized": 0.9512279033660889,
+  "best_val_mse_normalized": 1.3694111108779907,
+  "avg_epoch_seconds": 3.591643810272217,
+  "gpu_memory_mb": {
+    "peak_alloc_mb": 53.027328,
+    "peak_reserved_mb": 73.40032
+  },
+  "device": "cuda",
+  "gpu_name": "NVIDIA H100 80GB HBM3"
+}

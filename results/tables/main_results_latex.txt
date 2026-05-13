@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrr}
+\toprule
+dataset & pred_len & naive & paper_dlinear & patchtst & paper_patchtst \\
+\midrule
+electricity & 96 & 1.6081 & 0.1400 & 0.1357 & 0.1300 \\
+electricity & 336 & 1.6296 & 0.1690 & 0.1659 & 0.1670 \\
+traffic & 96 & 2.7363 & 0.4100 & 0.3709 & NaN \\
+weather & 96 & 0.2572 & 0.1960 & 0.1476 & 0.1520 \\
+weather & 336 & 0.3743 & 0.2830 & 0.2477 & 0.2490 \\
+\bottomrule
+\end{tabular}

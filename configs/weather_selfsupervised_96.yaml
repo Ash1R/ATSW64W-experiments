@@ -1,0 +1,22 @@
+# Placeholder for the Ambitious-C self-supervised masked patch pretraining run.
+# This config drives the supervised fine-tune step on Weather T=96 after the
+# masked-pretraining checkpoint has been produced (notebook 04 ambitious C).
+# The pretraining itself runs in-notebook; once it finishes, point ``--resume``
+# at the resulting checkpoint when invoking this config.
+model: patchtst
+dataset: weather
+seq_len: 336
+pred_len: 96
+patch_len: 16
+stride: 8
+d_model: 128
+n_heads: 16
+num_layers: 3
+d_ff: 256
+dropout: 0.2
+batch_size: 32
+epochs: 20
+lr: 5.0e-5            # smaller LR for fine-tuning
+patience: 8
+seed: 42
+run_name: weather_patchtst_T96_pretrained_finetune

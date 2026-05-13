@@ -1,0 +1,18 @@
+# No-patching ablation: same Transformer, but each time step is its own token.
+# This is the headline ablation that shows why patching helps.
+model: patchtst
+dataset: weather
+seq_len: 336
+pred_len: 96
+patch_len: 1
+stride: 1
+d_model: 128
+n_heads: 16
+num_layers: 3
+d_ff: 256
+dropout: 0.2
+batch_size: 16        # token count is ~21x larger than P=16, so reduce batch
+epochs: 20
+lr: 1.0e-4
+patience: 8
+seed: 42

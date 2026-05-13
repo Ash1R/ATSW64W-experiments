@@ -1,0 +1,18 @@
+# PatchTST/42 on Electricity, T=336
+model: patchtst
+dataset: electricity
+seq_len: 336
+pred_len: 336
+patch_len: 16
+stride: 8
+d_model: 128
+n_heads: 16
+num_layers: 3
+d_ff: 256
+dropout: 0.2
+batch_size: 16
+epochs: 30
+lr: 1.0e-4
+weight_decay: 0.0
+patience: 8
+seed: 42

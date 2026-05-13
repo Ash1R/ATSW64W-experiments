@@ -1,0 +1,24 @@
+# Base config for the patch-size sweep on Weather T=96.
+# Drive the sweep from notebooks/03 or run_grid.py:
+#
+#   python code/run_grid.py --base configs/weather_ablation_patch_sweep.yaml \
+#       --sweep '{"patch_len": [8, 16, 32], "stride": [4, 8, 16]}' --zip
+#
+# (The ``--zip`` flag is required because we want the (P=8,S=4), (P=16,S=8),
+# (P=32,S=16) pairings, not the cartesian product.)
+model: patchtst
+dataset: weather
+seq_len: 336
+pred_len: 96
+patch_len: 16
+stride: 8
+d_model: 128
+n_heads: 16
+num_layers: 3
+d_ff: 256
+dropout: 0.2
+batch_size: 32
+epochs: 20
+lr: 1.0e-4
+patience: 8
+seed: 42

@@ -1,0 +1,32 @@
+{
+  "run_name": "weather_naive_L336_T336_seed42",
+  "config": {
+    "model": "naive",
+    "dataset": "weather",
+    "seq_len": 336,
+    "pred_len": 336,
+    "batch_size": 32,
+    "epochs": 1,
+    "lr": 0.0001,
+    "project_root": "/content/drive/MyDrive/cs4782_patchtst_project",
+    "output_dir": "/content/drive/MyDrive/cs4782_patchtst_project/results",
+    "seed": 42,
+    "patch_len": 16,
+    "stride": 8,
+    "run_name": "weather_naive_L336_T336_seed42"
+  },
+  "num_channels": 21,
+  "num_params": 0,
+  "test_mse_inverse": 6860.44775390625,
+  "test_mae_inverse": 22.9064884185791,
+  "test_mse_normalized": 0.37431007623672485,
+  "test_mae_normalized": 0.33436787128448486,
+  "best_val_mse_normalized": 1.0463495254516602,
+  "avg_epoch_seconds": 3.044844388961792,
+  "gpu_memory_mb": {
+    "peak_alloc_mb": 7.225856,
+    "peak_reserved_mb": 8.388608
+  },
+  "device": "cuda",
+  "gpu_name": "NVIDIA H100 80GB HBM3"
+}

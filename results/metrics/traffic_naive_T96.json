@@ -1,0 +1,42 @@
+{
+  "run_name": "traffic_naive_T96",
+  "config": {
+    "patch_len": 16,
+    "stride": 8,
+    "d_model": 128,
+    "n_heads": 16,
+    "num_layers": 3,
+    "d_ff": 256,
+    "dropout": 0.2,
+    "batch_size": 32,
+    "epochs": 30,
+    "lr": 0.0001,
+    "weight_decay": 0.0,
+    "patience": 8,
+    "num_workers": 0,
+    "seed": 42,
+    "project_root": "/content/drive/MyDrive/cs4782_patchtst_project",
+    "output_dir": "/content/drive/MyDrive/cs4782_patchtst_project/results",
+    "run_name": "traffic_naive_T96",
+    "data_path": null,
+    "resume": false,
+    "model": "naive",
+    "dataset": "traffic",
+    "seq_len": 336,
+    "pred_len": 96
+  },
+  "num_channels": 862,
+  "num_params": 0,
+  "test_mse_inverse": 0.0055991956032812595,
+  "test_mae_inverse": 0.047461748123168945,
+  "test_mse_normalized": 2.7363274097442627,
+  "test_mae_normalized": 1.0805071592330933,
+  "best_val_mse_normalized": 2.390089511871338,
+  "avg_epoch_seconds": 6.115558385848999,
+  "gpu_memory_mb": {
+    "peak_alloc_mb": 322.359808,
+    "peak_reserved_mb": 513.80224
+  },
+  "device": "cuda",
+  "gpu_name": "NVIDIA H100 80GB HBM3"
+}
