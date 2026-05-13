@@ -18,7 +18,8 @@ look-back ablation from **Figure 4**. Table 2 is the paper's headline
 evidence that patching closes the DLinear gap; Figure 4 is its corollary
 that patching makes long context windows tractable.
 
-![Main results](results/figures/main_results_bar.png)
+![Weather test MSE: naive vs DLinear vs paper PatchTST vs ours, at T=96 and T=336](results/figures/weatherfromposter.png)
+![Electricity test MSE: naive vs DLinear vs paper PatchTST vs ours, at T=96 and T=336](results/figures/elecfromposter.png)
 
 ## 3. GitHub Contents
 
