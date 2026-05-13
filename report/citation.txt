@@ -1,0 +1,9 @@
+AI Usage Disclosure
+
+A large language model (Claude Opus 4.6 / 4.7) served as a supporting tool
+throughout this project. It assisted our replication by helping us
+think through how to navigate the paper and documentation, decompose the work 
+into smaller functions, and understand the math. We also used it while designing and adding our extension
+experiments, as it offered input on how to organize the code and implement ideas in Pytorch. 
+Every line of code, every run, and every conclusion was checked and approved by the project
+team (Ashir Rao, Sajal Sabat).
